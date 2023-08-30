@@ -87,7 +87,26 @@ fun main() {
     newDayOfWeek[4] = "Thursday"
     newDayOfWeek[5] = "Friday"
 
-    print(newDayOfWeek.toSortedMap())
+    println(newDayOfWeek.toSortedMap())
+
+    val doubleArrayList = ArrayList<Double>()
+    doubleArrayList.add(2.1)
+    doubleArrayList.add(2.6)
+    doubleArrayList.add(2.7)
+    doubleArrayList.add(3.3)
+    doubleArrayList.add(3.5)
+
+    var sum = 0.0;
+    for(i in doubleArrayList) {
+        sum += i;
+    }
+    println("avg: ${sum/doubleArrayList.size}")
+
+    val lambdaSum: (Int, Int) -> Int = {a: Int, b: Int -> a+b}
+    println(lambdaSum(10, 5))
+
+    val lambdaSumPrint = {a: Int, b: Int -> println(a+b)}
+    lambdaSumPrint(10, 5)
 }
 
 data class Fruit(val name: String, val price: Double)
