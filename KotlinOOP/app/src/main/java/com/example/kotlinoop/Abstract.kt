@@ -50,5 +50,5 @@ fun main() {
     human.breath()
     elephant.breath()
 
-    
+
 }
