@@ -116,17 +116,17 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             R.id.tv_option_two -> {
-                tvOptionOne?.let {
+                tvOptionTwo?.let {
                     selectedOptionView(it, 2)
                 }
             }
             R.id.tv_option_three -> {
-                tvOptionOne?.let {
+                tvOptionThree?.let {
                     selectedOptionView(it, 3)
                 }
             }
             R.id.tv_option_four -> {
-            tvOptionOne?.let {
+            tvOptionFour?.let {
                 selectedOptionView(it, 4)
                 }
             }
