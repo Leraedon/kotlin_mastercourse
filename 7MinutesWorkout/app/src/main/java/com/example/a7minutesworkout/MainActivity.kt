@@ -1,5 +1,6 @@
 package com.example.a7minutesworkout
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
                 "Here we sibal",
                 Toast.LENGTH_SHORT
             ).show()
+
+            val intent = Intent(this, ExerciseActivity::class.java)
+            startActivity(intent)
         }
     }
 
